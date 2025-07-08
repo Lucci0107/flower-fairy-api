@@ -1,27 +1,9 @@
-# Flower Fairy Image Generator API
+# Flower Fairy API
 
-This is a FastAPI application for generating flower fairy images via OpenAI API.
+This is a simple FastAPI app with a `/generate` endpoint for integration with Greta Webhook.
 
-## Endpoint
+## Run locally
 
-POST `/generate`
-
-### Request JSON
-```
-{
-  "style": "pastel",
-  "pose": "floating gracefully",
-  "background": "enchanted forest",
-  "lighting": "soft morning light",
-  "effect": "sparkles and glow",
-  "character_type": "flower"
-}
-```
-
-### Response JSON
-```
-{
-  "image_url": "https://...",
-  "prompt": "..."
-}
+```bash
+uvicorn main:app --reload
 ```
